@@ -14,6 +14,20 @@ export const projects = [
       github: 'https://github.com/jtich40/corinth-code-challenge'
     },
     {
+      name: 'Deep Thoughts',
+      description: 'A social media app hosted on AWS.',
+      demo: '/images/deep-thoughts.gif',
+      deployment: 'http://54.165.182.68/',
+      github: 'https://github.com/jtich40/aws-thought'
+    },
+    {
+      name: 'Tich-Tac-Toe',
+      description: 'A React Tic-Tac-Toe game.',
+      demo: '/images/tich-tac-toe.gif',
+      deployment: 'https://tichtactoe.netlify.app/',
+      github: 'https://github.com/jtich40/tich-tac-toe'
+    },
+    {
       name: 'MIPHY',
       description: 'A front-end search engine that finds GIFs from your favorite movies.',
       demo: '/images/miphy.gif',
@@ -26,19 +40,5 @@ export const projects = [
       demo: '/images/shared-lunch.gif',
       deployment: 'https://shared-lunch.herokuapp.com/',
       github: 'https://github.com/jtich40/hydro-homies'
-    },
-    {
-      name: 'Tich-Tac-Toe',
-      description: 'A React Tic-Tac-Toe game.',
-      demo: '/images/tich-tac-toe.gif',
-      deployment: 'https://tichtactoe.netlify.app/',
-      github: 'https://github.com/jtich40/tich-tac-toe'
-    },
-    {
-      name: 'Deep Thoughts',
-      description: 'A social media app hosted on AWS.',
-      demo: '/images/deep-thoughts.gif',
-      deployment: 'http://54.165.182.68/',
-      github: 'https://github.com/jtich40/aws-thought'
     },
   ]
