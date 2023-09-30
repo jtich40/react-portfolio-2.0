@@ -7,7 +7,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function Footer() {
   return (
-    <div className="flex justify-center space-x-8 my-10">
+    <div className="flex justify-evenly my-10">
       <a 
       href="https://github.com/jtich40" 
       target="_blank" 
