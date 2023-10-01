@@ -4,8 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './components/Home'
 import About from './components/About'
-import Projects from './components/Projects'
-import Inspiration from './components/Inspiration'
+import Skills from './components/Skills'
+import Projects from './components/Projects/Projects'
+import Inspiration from './components/Inspiration/Inspiration'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -17,6 +18,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Skills />
       <Projects />
       <Inspiration />
       <Footer />

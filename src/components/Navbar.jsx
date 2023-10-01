@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-full fixed navbarScroll fade ml-6">
+    <nav className="navbar navbar-expand-full fixed navbarScroll fade ml-6 z-30">
         <div className="container">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

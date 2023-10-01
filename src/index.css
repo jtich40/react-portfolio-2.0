@@ -26,6 +26,23 @@
   -webkit-text-size-adjust: 100%; */
 }
 
+/* Skills Section */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.skill-item {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    /* margin: 0 5px */
+}
+
 /* .typing-animation {
   overflow: hidden;
   white-space: nowrap;
