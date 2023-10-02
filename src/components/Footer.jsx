@@ -14,28 +14,28 @@ export default function Footer() {
       rel="noreferrer"
       title="GitHub"
       >
-      <GitHubIcon fontSize="medium" />
+      <GitHubIcon fontSize="medium" style={{color: "#0f0"}} />
       </a>
       <a href="https://www.linkedin.com/in/jared-tichacek/"
       target="_blank"
       rel="noreferrer"
       title="LinkedIn"
       >
-      <LinkedInIcon color="primary" fontSize="medium" />
+      <LinkedInIcon fontSize="medium" style={{color: "#0f0"}} />
       </a>
       <a href="https://twitter.com/J_Tich40"
       target="_blank"
       rel="noreferrer"
       title="Twitter"
       >
-      <TwitterIcon color="primary" fontSize="medium" />
+      <TwitterIcon fontSize="medium" style={{color: "#0f0"}} />
       </a>
       <a href="mailto:jared.tichacek@gmail.com"
       target="_blank"
       rel="noreferrer"
       title="Email"
       >
-      <EmailIcon fontSize="medium" />
+      <EmailIcon fontSize="medium" style={{color: "#0f0"}} />
       </a>
     </div>
   )

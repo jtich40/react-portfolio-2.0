@@ -33,19 +33,31 @@
 /* Skills Section */
 
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-around;
+  /* display: flex;
+  flex-wrap: wrap; */
+  gap: 30px;
+  justify-content: space-around;
 }
 
 .skill-item {
-    width: 100px; /* Adjust the size as needed */
-    height: 100px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    /* margin: 0 5px */
+  width: 100px; /* Adjust the size as needed */
+  height: 100px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  /* margin: 0 5px */
 }
+
+/* Projects Section */
+
+.button {
+  background-color: #0f0; /* Your custom background color */
+  transition: background-color 0.3s ease; /* Add a transition for smooth color change */
+}
+
+.button:hover {
+  background-color: rgba(15, 15, 15, 0.7); /* Slightly transparent color on hover */
+}
+
 
 /* Animated Background */
 
