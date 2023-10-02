@@ -8,7 +8,7 @@ export default function ProjectCard({
     deployment,
 }) {
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center reveal">
             <div className="mt-20 relative">
                 <div className="card w-100 h-100 image-full relative group">
                     <figure>

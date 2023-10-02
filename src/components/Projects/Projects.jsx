@@ -6,7 +6,7 @@ import { projects } from '../../projects'
 export default function Projects() {
   return (
     <div className="min-h-screen">
-      <h1 className="text-center text-4xl mt-36">Projects</h1>
+      <h1 className="text-center text-4xl mt-36 reveal">Projects</h1>
       {projects.map(project => (
         <ProjectCard 
         key={project.name}

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen reveal">
       <div className="card bg-base-100 shadow-xl max-w-md p-8">
         <figure>
           <img
