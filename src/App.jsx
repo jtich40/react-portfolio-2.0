@@ -9,12 +9,14 @@ import Projects from './components/Projects/Projects'
 import Inspiration from './components/Inspiration/Inspiration'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import AnimatedBg from './components/AnimatedBg'
 
 
 function App() {
 
   return (
     <div>
+      <AnimatedBg />
       <Navbar />
       <Home />
       <About />

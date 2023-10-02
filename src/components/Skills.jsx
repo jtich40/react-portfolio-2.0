@@ -4,7 +4,7 @@ import { skillImages } from '../skills'
 export default function Skills() {
     useEffect(() => {
         const skills = document.querySelectorAll('.skill-item');
-
+        // handle event listeners for each skill item so that they can be moved around
         skills.forEach(skill => {
             skill.addEventListener('mouseenter', () => {
                 skill.style.transform = 'scale(1.2)';
