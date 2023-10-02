@@ -10,6 +10,7 @@ import Inspiration from './components/Inspiration/Inspiration'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import AnimatedBg from './components/AnimatedBg'
+import RevealAnimation from './components/RevealAnimation'
 
 
 function App() {
@@ -20,9 +21,13 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <RevealAnimation />
       <Skills />
+      <RevealAnimation />
       <Projects />
+      <RevealAnimation />
       <Inspiration />
+      <RevealAnimation />
       <Footer />
     </div>
   )
