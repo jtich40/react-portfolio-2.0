@@ -8,8 +8,8 @@ export default function Inspiration() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <div className="text-center">
-        <h2 className="text-4xl mt-36 reveal">Inspiration</h2>
-        <p className="text-2xl my-10 reveal">A collection of media that has fueled my creativity.</p>
+        <h2 className="text-6xl mt-36 reveal">Inspiration</h2>
+        <p className="text-2xl mt-10 mb-20 reveal">A collection of media that has fueled my creativity.</p>
       </div>
       <div className="flex justify-center flex-wrap gap-4">
         {randomImages.map(image => (

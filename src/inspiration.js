@@ -4,6 +4,10 @@ export const images = [
         artwork: '/images/13-hours.jpg'
     },
     {
+        title: '1917',
+        artwork: '/images/1917.jpg'
+    },
+    {
         title: '24',
         artwork: '/images/24.jpg'
     },
@@ -18,6 +22,10 @@ export const images = [
     {
         title: 'Andor',
         artwork: '/images/andor.webp'
+    },
+    {
+        title: 'Ant-Man and the Wasp: Quantumania',
+        artwork: '/images/quantumania.jpg'
     },
     {
         title: 'Arrow',
@@ -68,6 +76,14 @@ export const images = [
         artwork: '/images/defiance.jpg'
     },
     {
+        title: 'Dunkirk',
+        artwork: '/images/dunkirk.jpg'
+    },
+    {
+        title: 'Guardians of the Galaxy',
+        artwork: '/images/guardians-of-the-galaxy.jpg'
+    },
+    {
         title: 'Hacksaw Ridge',
         artwork: '/images/hacksaw-ridge.webp'
     },
@@ -80,6 +96,10 @@ export const images = [
         artwork: '/images/inception.jpg'
     },
     {
+        title: 'Interstellar',
+        artwork: '/images/interstellar.jpg'
+    },
+    {
         title: 'Spider-Man: Into the Spider-Verse',
         artwork: '/images/into-the-spiderverse.jpg'
     },
@@ -88,12 +108,20 @@ export const images = [
         artwork: '/images/iron-fist.jpg'
     },
     {
+        title: 'Iron Man',
+        artwork: '/images/iron-man.jpg'
+    },
+    {
         title: 'Jessica Jones',
         artwork: '/images/jessica-jones.jpg'
     },
     {
         title: 'Luke Cage',
         artwork: '/images/luke-cage.jpg'
+    },
+    {
+        title: 'Moon Knight',
+        artwork: '/images/moon-knight.jpg'
     },
     {
         title: 'Obi-Wan Kenobi',
@@ -110,6 +138,10 @@ export const images = [
     {
         title: 'Schitt\'s Creek',
         artwork: '/images/schitts-creek.jpg'
+    },
+    {
+        title: 'Secret Invasion',
+        artwork: '/images/secret-invasion.jpg'
     },
     {
         title: 'Shang-Chi and the Legend of the Ten Rings',
@@ -196,11 +228,27 @@ export const images = [
         artwork: '/images/the-pacific.jpg'
     },
     {
+        title: 'The Prestige',
+        artwork: '/images/the-prestige.jpg'
+    },
+    {
+        title: 'The Punisher',
+        artwork: '/images/the-punisher.jpg'
+    },
+    {
+        title: 'Thor: Ragnarok',
+        artwork: '/images/thor-ragnarok.jpg'
+    },
+    {
         title: 'Turn: Washington\'s Spies',
         artwork: '/images/turn.jpg'
     },
     {
         title: 'Unbroken',
         artwork: '/images/unbroken.jpg'
+    },
+    {
+        title: 'WandaVision',
+        artwork: '/images/wanda-vision.jpg'
     },
 ]

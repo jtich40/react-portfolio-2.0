@@ -32,9 +32,9 @@ export default function Skills() {
     }, []);
 
     return (
-        <div className="container mx-auto mt-36 min-h-screen flex flex-col justify-center items-center reveal">
-            <h2 className="text-4xl text-center">Skills</h2>
-            <div className="skills-container mt-20">
+        <div className="container mx-auto mt-36 min-h-screen flex flex-col justify-center items-center">
+            <h2 className="text-6xl text-center reveal mb-20">Skills</h2>
+            <div className="skills-container grid grid-cols-1 lg:grid-cols-6 md:grid-cols-3 gap-4 reveal">
                 {skillImages.map((imageUrl, index) => (
                     <div className="skill-item" key={index}>
                         <img src={imageUrl} alt={`Skill ${index}`} />

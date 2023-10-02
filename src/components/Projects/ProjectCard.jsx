@@ -10,7 +10,7 @@ export default function ProjectCard({
     return (
         <div className="flex flex-col items-center reveal">
             <div className="mt-20 relative">
-                <div className="card w-100 h-100 image-full relative group">
+                <div className="card w-100 h-100 image-full relative group mx-4">
                     <figure>
                         <img
                             src={demo}
@@ -27,7 +27,7 @@ export default function ProjectCard({
                         href={deployment}
                         target="_blank"
                         rel="noreferrer"
-                        className="btn btn-primary"
+                        className="btn bg-code-green text-black hover:text-white"
                     >
                         View App
                     </a>
@@ -35,7 +35,7 @@ export default function ProjectCard({
                         href={github}
                         target="_blank"
                         rel="noreferrer"
-                        className="btn btn-warning"
+                        className="btn bg-code-green text-black hover:text-white"
                     >
                         View GitHub
                     </a>
