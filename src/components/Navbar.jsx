@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-full fixed navbarScroll fade ml-6 z-30">
+    <nav className="navbar navbar-expand-full fixed navbarScroll ml-6 z-30">
         <div className="container">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -12,16 +13,16 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="flex ms-auto rounded-full bg-gray-500 py-2">
                     <li className="nav-item">
-                        <a className="text-black hover:text-white hover:bg-code-green transition duration-500 nav-link hover:rounded-full rounded-full hover:py-2 py-2 px-2 " id="tab-1" href="#">About</a>
+                        <Link activeClass="active" smooth spy to="about" className="text-black hover:text-white hover:bg-code-green cursor-pointer transition duration-500 nav-link hover:rounded-full rounded-full hover:py-2 py-2 px-2">About</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="text-black hover:text-white hover:bg-code-green transition duration-500 nav-link hover:rounded-full rounded-full hover:py-2 py-2 px-2 " id="tab-2" href="#about">Skills</a>
+                        <Link activeClass="active" smooth spy to="skills" className="text-black hover:text-white hover:bg-code-green cursor-pointer transition duration-500 nav-link hover:rounded-full rounded-full hover:py-2 py-2 px-2">Skills</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="text-black hover:text-white hover:bg-code-green transition duration-500 nav-link hover:rounded-full rounded-full hover:py-2 py-2 px-2 " id="tab-3" href="#skills">Projects</a>
+                        <Link activeClass="active" smooth spy to="projects" className="text-black hover:text-white hover:bg-code-green cursor-pointer transition duration-500 nav-link hover:rounded-full rounded-full hover:py-2 py-2 px-2">Projects</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="text-black hover:text-white hover:bg-code-green transition duration-500 nav-link hover:rounded-full rounded-full hover:py-2 py-2 px-2 " id="tab-4" href="#projects">Inspiration</a>
+                        <Link activeClass="active" smooth spy to="inspiration" className="text-black hover:text-white hover:bg-code-green cursor-pointer transition duration-500 nav-link hover:rounded-full rounded-full hover:py-2 py-2 px-2">Inspiration</Link>
                     </li>
                 </ul>
             </div>

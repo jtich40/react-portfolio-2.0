@@ -11,6 +11,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import AnimatedBg from './components/AnimatedBg'
 import RevealAnimation from './components/RevealAnimation'
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   return (
     <div>
       <AnimatedBg />
+      <ScrollToTop />
       <Navbar />
       <Home />
       <About />

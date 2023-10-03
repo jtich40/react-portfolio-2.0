@@ -32,7 +32,10 @@ export default function Skills() {
     }, []);
 
     return (
-        <div className="container mx-auto mt-36 min-h-screen flex flex-col justify-center items-center">
+        <div 
+        className="container mx-auto mt-36 min-h-screen flex flex-col justify-center items-center"
+        id="skills"
+        >
             <h2 className="text-6xl text-center reveal mb-20">Skills</h2>
             <div className="skills-container grid grid-cols-1 lg:grid-cols-6 md:grid-cols-3 gap-4 reveal">
                 {skillImages.map((imageUrl, index) => (
