@@ -2,8 +2,11 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="flex justify-center items-center min-h-screen reveal mx-8">
-      <div className="card bg-base-100 shadow-xl max-w-md p-8">
+    <div 
+    className="flex justify-center items-center min-h-screen reveal mx-8"
+    id="about"
+    >
+      <div className="card bg-neutral-800 shadow-xl max-w-md p-8">
         <figure>
           <img
             src="/images/555_hq.jpg"
