@@ -7,11 +7,12 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects/Projects'
 import Inspiration from './components/Inspiration/Inspiration'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer'
 import AnimatedBg from './components/AnimatedBg'
 import RevealAnimation from './components/RevealAnimation'
 import ScrollToTop from './components/ScrollToTop'
+import NavHamburger from './components/Navbar/NavHamburger'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <div>
       <AnimatedBg />
       <ScrollToTop />
+      <NavHamburger />
       <Navbar />
       <Home />
       <About />
