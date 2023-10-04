@@ -1,10 +1,22 @@
 import React from "react";
-import Typer from "./Typer";
+import Typewriter from 'typewriter-effect';
+
 
 export default function Home() {
     return (
-    <div className="flex justify-center items-center min-h-screen" id="home">
-        <Typer />
+    <div className="flex justify-center items-center text-center min-h-screen" id="home">
+        <Typewriter onInit={typewriter => typewriter
+        .typeString('<span style="font-size: 5rem">Hi, my name is Jared Tichacek</span>')
+        .pauseFor(100)
+        .typeString('<br><br>')
+        .pauseFor(100)
+        .typeString('<span style="font-size: 2.5rem">Full Stack Software Engineer | Nashville, TN</span>')
+        .start()
+        } 
+        options={{
+            delay: 75,
+        }}
+        />
     </div>
     )
 }
