@@ -2,7 +2,6 @@ import React from 'react'
 import ProjectCard from './ProjectCard'
 import { projects } from '../../projects'
 
-
 export default function Projects() {
   return (
     <div className="min-h-screen" id="projects">
@@ -10,7 +9,6 @@ export default function Projects() {
       {projects.map(project => (
         <ProjectCard 
         key={project.name}
-        // name={project.name}
         description={project.description}
         demo={project.demo}
         github={project.github}

@@ -11,7 +11,6 @@ import RevealAnimation from './components/RevealAnimation'
 import ScrollToTop from './components/ScrollToTop'
 import NavHamburger from './components/Navbar/NavHamburger'
 
-
 function App() {
 
   return (
