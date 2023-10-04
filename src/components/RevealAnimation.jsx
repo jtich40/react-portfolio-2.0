@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 export default function RevealAnimation() {
     useEffect(() => {
         function reveal() {
-            let elements = document.querySelectorAll(".reveal"); // Use a general selector
+            let elements = document.querySelectorAll(".reveal");
         
             elements.forEach((element) => {
                 let windowHeight = window.innerHeight;

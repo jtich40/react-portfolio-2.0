@@ -4,7 +4,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
-
 export default function Footer() {
   return (
     <div className="flex justify-evenly my-10">

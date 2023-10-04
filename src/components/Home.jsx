@@ -20,8 +20,3 @@ export default function Home() {
     </div>
     )
 }
-
-            // <div className="mb-24">
-            //     <h1 className="text-6xl text-center">Hi, my name is Jared Tichacek</h1>
-            //     <p className="text-3xl mt-8 text-center">Full Stack Software Engineer | Nashville, TN</p>
-            // </div>
