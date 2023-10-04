@@ -19,7 +19,7 @@ export default function ProjectCard({
                         />
                     </figure>
                     <div className="card-body text-center absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-20 group-hover:opacity-100">
-                        <p className="text-stone-200 pt-28">{description}</p>
+                        <p className="text-stone-200 flex items-center">{description}</p>
                     </div>
                 </div>
                 <div className="flex justify-center mt-5 space-x-5">
