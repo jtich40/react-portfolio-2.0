@@ -12,6 +12,10 @@ export const images = [
         artwork: '/images/24.jpg'
     },
     {
+        title: 'Agents of S.H.I.E.L.D.',
+        artwork: '/images/agents-of-shield.jpg'
+    },
+    {
         title: 'Ahsoka',
         artwork: '/images/ahsoka.jpg'
     },
@@ -26,6 +30,10 @@ export const images = [
     {
         title: 'Ant-Man and the Wasp: Quantumania',
         artwork: '/images/quantumania.jpg'
+    },
+    {
+        title: 'Arrested Development',
+        artwork: '/images/arrested-development.jpg'
     },
     {
         title: 'Arrow',
@@ -186,6 +194,10 @@ export const images = [
     {
         title: 'The Batman',
         artwork: '/images/the-batman.webp'
+    },
+    {
+        title: 'The Bourne Ultimatum',
+        artwork: '/images/the-bourne-ultimatum.jpg'
     },
     {
         title: 'The Dark Knight Rises',

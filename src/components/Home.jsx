@@ -6,11 +6,11 @@ export default function Home() {
     return (
     <div className="flex justify-center items-center text-center min-h-screen" id="home">
         <Typewriter onInit={typewriter => typewriter
-        .typeString('<span style="font-size: 5rem">Hi, my name is Jared Tichacek</span>')
+        .typeString('<span class="md:text-7xl text-5xl">Hi, my name is Jared Tichacek</span>')
         .pauseFor(100)
-        .typeString('<br><br>')
+        .typeString('<br><br><br>')
         .pauseFor(100)
-        .typeString('<span style="font-size: 2.5rem">Full Stack Software Engineer | Nashville, TN</span>')
+        .typeString('<span class="md:text-4xl text-3xl">Full Stack Software Engineer | Nashville, TN</span>')
         .start()
         } 
         options={{
