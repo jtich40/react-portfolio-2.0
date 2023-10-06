@@ -22,11 +22,11 @@ The Home section features a hero banner with a typewriter effect that displays m
 
 ![image](https://github.com/jtich40/react-portfolio-2.0/assets/116316302/1419710a-6e50-492e-9790-597b60ecca3e)
 
-The About Me section features a headshot and a short bio. The Skills section displays full-stack development skills I possess that can be interacted with to . 
+The About Me section features a headshot and a short bio.
 
 ![image](https://github.com/jtich40/react-portfolio-2.0/assets/116316302/6c600c44-ea23-4ddc-9383-02f4e140b37e)
 
-The Skills section displays full-stack development skills I possess that can be interacted with to . 
+The Skills section displays full-stack development skills I possess that provide dynamic interactivity when the user hovers over each skill item.
 
 ![image](https://github.com/jtich40/react-portfolio-2.0/assets/116316302/fd192b3e-cf25-4691-8fad-af2aa8f034ca)
 
@@ -34,7 +34,7 @@ The Projects section features demos of a curated list of apps I've built with li
 
 ![image](https://github.com/jtich40/react-portfolio-2.0/assets/116316302/9b52a930-4f3d-463e-b577-74243970a1ca)
 
-Lastly, the Inspiration section includes a collection of tiles featuring media that has inspired my creativity.
+Lastly, the Inspiration section includes a collection of tiles featuring media that has inspired my creativity that the user can intact with by hovering over them.
 
 ![image](https://github.com/jtich40/react-portfolio-2.0/assets/116316302/d2e1f811-727d-416d-9e2f-016a38d61ce0)
 
