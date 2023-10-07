@@ -34,7 +34,7 @@ The Projects section features demos of a curated list of apps I've built with li
 
 ![image](https://github.com/jtich40/react-portfolio-2.0/assets/116316302/9b52a930-4f3d-463e-b577-74243970a1ca)
 
-Lastly, the Inspiration section includes a collection of tiles featuring media that has inspired my creativity that the user can intact with by hovering over them.
+Lastly, the Inspiration section includes a collection of tiles featuring media that has inspired my creativity that the user can intact with by hovering over them. The tiles are randomly generated and the order changes on page refresh.
 
 ![image](https://github.com/jtich40/react-portfolio-2.0/assets/116316302/d2e1f811-727d-416d-9e2f-016a38d61ce0)
 
