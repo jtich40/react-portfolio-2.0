@@ -83,10 +83,8 @@ export default function Skills() {
 
         // Adjust for different screen sizes
         if (width < 640) { // Mobile
-            return Math.max(45, Math.min(55, targetSkillArea * 0.8));
-        } else if (width < 1024) { // Tablet
             return Math.max(60, Math.min(75, targetSkillArea * 0.9));
-        } else { // Desktop
+        } else {
             return Math.max(75, Math.min(100, targetSkillArea * 1.0));
         }
     };
@@ -285,11 +283,11 @@ export default function Skills() {
             className="container mx-auto py-12 sm:py-16 md:py-20 flex flex-col justify-center items-center"
             id="skills"
         >
-            <h2 className="text-4xl sm:text-5xl text-center mb-8 sm:mb-12 md:mb-16 font-bold">Skills</h2>
+            <h2 className="text-6xl text-center reveal mb-20">Skills</h2>
 
             <div
                 ref={containerRef}
-                className="relative w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] rounded-lg overflow-hidden"
+                className="relative w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] rounded-lg overflow-hidden reveal"
                 style={{
                     background: 'transparent',
                     touchAction: 'none' // Prevents browser handling of all touch actions
