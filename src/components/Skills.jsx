@@ -316,10 +316,10 @@ export default function Skills() {
 
     return (
         <div
-            className="min-h-screen flex flex-col justify-center items-center mt-36"
+            className="min-h-screen flex flex-col justify-center items-center"
             id="skills"
         >
-            <h2 className="text-6xl text-center reveal">Skills</h2>
+            <h2 className="text-6xl text-center mt-36 reveal">Skills</h2>
 
             <div
                 ref={containerRef}
