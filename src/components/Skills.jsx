@@ -7,7 +7,7 @@ export default function Skills() {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [containerDimensions, setContainerDimensions] = useState({ width: 0, height: 0 });
     const animationRef = useRef(null);
-    const [skillSize, setSkillSize] = useState(60);
+    const [skillSize, setSkillSize] = useState(85); // Increased default size further
     const [isDragging, setIsDragging] = useState(false);
 
     // Initialize skills with positions inside a circle
@@ -30,7 +30,7 @@ export default function Skills() {
 
         // Calculate the radius of the circular container
         // Use the smaller dimension to ensure the circle fits within the container
-        const maxRadius = Math.min(width, height) / 2 * 0.85 - padding;
+        const maxRadius = Math.min(width, height) / 2 * 0.90 - padding; // Increased to utilize more space
 
         const initialSkills = skillImages.map((skill, index) => {
             // Use Vogel's method (sunflower seed arrangement) to fill circle
@@ -39,8 +39,10 @@ export default function Skills() {
             const angle = index * goldenAngle;
 
             // Scale radius based on index to fill the circle more evenly
-            // Square root distribution creates more uniform density
-            const radiusFactor = Math.sqrt(index / numSkills);
+            // Modified distribution based on screen size
+            const radiusFactor = width < 640
+                ? Math.pow((index + 1) / numSkills, 0.55) // More spread out on mobile (0.55)
+                : Math.pow((index + 1) / numSkills, 0.62); // Slightly more concentrated on desktop (0.62)
 
             // Calculate position - this creates a filled circle pattern
             const radius = maxRadius * radiusFactor;
@@ -76,17 +78,21 @@ export default function Skills() {
     };
 
     // Calculate appropriate skill size based on container dimensions and device
+    // MODIFIED: Simplified to just mobile and desktop breakpoints
     const calculateSkillSize = (width, height) => {
         const area = width * height;
         const numSkills = skillImages.length;
-        const targetSkillArea = Math.sqrt(area / (numSkills * 2));
 
-        if (width < 640) { // Mobile
-            return Math.max(40, Math.min(50, targetSkillArea * 0.6));
-        } else if (width < 1024) { // Tablet
-            return Math.max(50, Math.min(60, targetSkillArea * 0.7));
-        } else { // Desktop
-            return Math.max(60, Math.min(90, targetSkillArea));
+        // Calculate a target size that accounts for both container size and number of skills
+        const targetSkillArea = Math.sqrt(area / (numSkills * 1.8));
+
+        // Factor in the number of skills - if there are many skills, make them slightly smaller
+        const sizeFactor = Math.max(0.9, 1.2 - (numSkills / 60)); // Adaptive sizing based on skill count
+
+        if (width < 640) { // Mobile - significantly increased sizes
+            return Math.max(65, Math.min(85, targetSkillArea * 1.0 * sizeFactor));
+        } else { // Desktop (includes what was previously tablet)
+            return Math.max(75, Math.min(110, targetSkillArea * 1.0 * sizeFactor));
         }
     };
 
@@ -114,7 +120,7 @@ export default function Skills() {
                 const centerX = width / 2;
                 const centerY = height / 2;
                 const padding = newSkillSize;
-                const maxRadius = Math.min(width, height) / 2 * 0.85 - padding;
+                const maxRadius = Math.min(width, height) / 2 * 0.90 - padding; // Adjusted to match initialization
 
                 setSkills(prevSkills => {
                     return prevSkills.map(skill => {
@@ -229,7 +235,7 @@ export default function Skills() {
                     const floatHomeY = skill.homeY + bobY;
 
                     // Ripple effect - disperse away from cursor
-                    const repelRadius = 150; // Distance where repulsion starts
+                    const repelRadius = 180; // Increased from 150 for larger interaction area with bigger icons
                     const repelStrength = 0.2; // Strength of repulsion
 
                     // Calculate new velocities
@@ -264,7 +270,7 @@ export default function Skills() {
                     const dx2 = newX - centerX;
                     const dy2 = newY - centerY;
                     const distanceFromCenter = Math.sqrt(dx2 * dx2 + dy2 * dy2);
-                    const maxRadius = Math.min(width, height) / 2 * 0.9;
+                    const maxRadius = Math.min(width, height) / 2 * 0.85;
 
                     if (distanceFromCenter > maxRadius - skillSize / 2) {
                         // Scale back to the edge of the circle with some elasticity
@@ -283,8 +289,8 @@ export default function Skills() {
 
                     // Scale based on mouse proximity (hover effect)
                     let newScale = 1;
-                    if (distance < 80) {
-                        newScale = 1 + (1 - distance / 80) * 0.3;
+                    if (distance < 100) { // Increased from 80 to 100 for larger hover range
+                        newScale = 1 + (1 - distance / 100) * 0.3;
                     }
 
                     // Gentle rotation based on velocity and floating
@@ -323,7 +329,7 @@ export default function Skills() {
 
             <div
                 ref={containerRef}
-                className="relative w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] mt-20 rounded-lg overflow-hidden reveal"
+                className="relative w-full h-[450px] sm:h-[650px] lg:h-[750px] mt-20 rounded-lg overflow-hidden reveal"
                 style={{
                     background: 'transparent',
                     touchAction: 'none',
@@ -358,12 +364,12 @@ export default function Skills() {
                         }}
                     >
                         <div
-                            className="bg-opacity-70 rounded-full p-2 shadow-md w-full h-full flex items-center justify-center cursor-pointer transition-all duration-200 hover:shadow-lg hover:bg-opacity-90"
+                            className="p-2 w-full h-full flex items-center justify-center cursor-pointer transition-all duration-200"
                         >
                             <img
                                 src={item.skill.icon || item.skill}
                                 alt={item.skill.name || `Skill ${item.id}`}
-                                className="w-4/5 h-4/5 object-contain"
+                                className="w-11/12 h-11/12 object-contain" // Always use 11/12 (91.7%) of container across all screen sizes
                                 title={item.skill.name || `Skill ${item.id}`}
                             />
                         </div>
