@@ -30,7 +30,7 @@ export default function Skills() {
 
         // Calculate the radius of the circular container
         // Use the smaller dimension to ensure the circle fits within the container
-        const maxRadius = Math.min(width, height) / 2 * 0.90 - padding; // Increased to utilize more space
+        const maxRadius = Math.min(width, height) / 2 * 1.10 - padding; // Increased to utilize more space
 
         const initialSkills = skillImages.map((skill, index) => {
             // Use Vogel's method (sunflower seed arrangement) to fill circle
@@ -39,10 +39,10 @@ export default function Skills() {
             const angle = index * goldenAngle;
 
             // Scale radius based on index to fill the circle more evenly
-            // Modified distribution based on screen size
+            // Modified distribution based on screen size to spread icons further
             const radiusFactor = width < 640
-                ? Math.pow((index + 1) / numSkills, 0.55) // More spread out on mobile (0.55)
-                : Math.pow((index + 1) / numSkills, 0.62); // Slightly more concentrated on desktop (0.62)
+                ? Math.pow((index + 1) / numSkills, 0.45) // More spread out on mobile (0.50)
+                : Math.pow((index + 1) / numSkills, 0.52); // Slightly more concentrated on desktop (0.57)
 
             // Calculate position - this creates a filled circle pattern
             const radius = maxRadius * radiusFactor;
@@ -120,7 +120,7 @@ export default function Skills() {
                 const centerX = width / 2;
                 const centerY = height / 2;
                 const padding = newSkillSize;
-                const maxRadius = Math.min(width, height) / 2 * 0.90 - padding; // Adjusted to match initialization
+                const maxRadius = Math.min(width, height) / 2 * 1.10 - padding; // Adjusted to match initialization
 
                 setSkills(prevSkills => {
                     return prevSkills.map(skill => {
@@ -364,7 +364,7 @@ export default function Skills() {
                         }}
                     >
                         <div
-                            className="p-2 w-full h-full flex items-center justify-center cursor-pointer transition-all duration-200"
+                            className="p-3 w-full h-full flex items-center justify-center cursor-pointer transition-all duration-200"
                         >
                             <img
                                 src={item.skill.icon || item.skill}
