@@ -3,12 +3,14 @@ import InspirationCard from './InspirationCard'
 import { images } from '../../inspiration'
 
 export default function Inspiration() {
-  const randomImages = [...images].sort(() => Math.random() - 0.5);
+  const randomImages = [...images]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 30);
 
   return (
-    <div 
-    className="min-h-screen flex flex-col justify-center items-center mt-36"
-    id="inspiration"
+    <div
+      className="min-h-screen flex flex-col justify-center items-center mt-36"
+      id="inspiration"
     >
       <div className="text-center">
         <h2 className="text-6xl reveal">Inspiration</h2>
